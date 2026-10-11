@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="page-container">
+        <div class="image-container">
+            <div class="logo">
+                <img src="./logo/logo.png" alt="Odin logo" class="logo-image">
+                <div class="logo-name">Odin</div>
+            </div>
+            <div class="credit">Photo by <a href="https://unsplash.com/@sidphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Simona D'Auria</a> on <a href="https://unsplash.com/photos/a-red-cabin-in-the-middle-of-a-snowy-forest-6PooEdi2VTg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></a></div>
+        </div>
+        <div class="form-container">
+            <div class="some-text">
+                <h4>The  <span class="odin">Odin</span> traditional cabins are perfect for experiencing <span class="norwegian-word">hyttekos</span> (Norwegian cabin coziness). Book their cabins at the dramatic
+                    Lyngen Alps in northern Norway. Sign up <span>now</span> to get started.
+                </h4>
+                <h4>We <span>know</span> you're going to love it.</h4>
+            </div>
+            <form>   
+                <fieldset>
+                    <legend>Start your getaway!</legend>
+                        <div class="signup-fields">
+                            <div class="signup">
+                                <div class="signup-details">
+                                    <label for="first-name">FIRST NAME</label>
+                                    <input type="text" id="first-name" name="first_name" required />
+                                </div>
+                                <div class="signup-details">
+                                    <label for="last-name">LAST NAME</label>
+                                    <input type="text" id="last-name" name="last_name" required />
+                                </div>
+                            </div>
+                            <div class="signup">
+                                <div class="signup-details">
+                                    <label for="signup-mail">EMAIL</label>
+                                    <input type="email" id="signup-mail" name="signup_email" required />
+                                </div>
+                                <div class="signup-details">
+                                    <label for="phone-num">PHONE NUMBER</label>
+                                    <input type="tel" id="phone-num" name="phone_number" placeholder="(123)-456-7890"
+                                        pattern="(?:\(\d{3}\)|\d{3})[\s\-]*\d{3}[\s\-]*\d{4}" />
+                                </div>
+                            </div>
+                            <div class="signup">
+                                <div class="signup-details">
+                                    <label for="pw">PASSWORD</label>
+                                    <input type="password" id="pw" name="signup_pw" pattern=".{5,}" required />
+                                    <span class="pw-required">Password must have at least five (5) characters.</span>
+                                </div>
+                                <div class="signup-details">
+                                    <label for="confirm-pw">CONFIRM PASSWORD</label>
+                                    <input type="password" id="confirm-pw" name="confirm_password" pattern=".{5,}" required />
+                                </div>
+                            </div>
+                        </div>
+                </fieldset>                      
+                <div class="submit-button">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+            <div class="login-text">Already have an account? <a href="#" style="padding-left: 4px; font-weight: bold;">Log in</a></div>
+            <div class="footer">TOP project by Cherry © 2026</div>    
+        </div>
+    </div>
+</body>
+</html>

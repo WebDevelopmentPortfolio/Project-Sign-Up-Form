@@ -1,0 +1,292 @@
+
+@font-face {
+    font-family: "norse";
+    src:
+        url("./fonts/Norse-Bold.woff") format("woff"),
+        url("./fonts/Norse-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:darkslategrey;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color:brown;
+    
+
+}
+
+
+.page-container {
+    display: flex;
+    width: 72%;
+    min-height: 100vh;
+    
+
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("./background/simona-d-auria-6PooEdi2VTg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 38%;
+    
+    
+}
+
+/*putting something here so the logo goes a bit down*/
+.image-container::before {
+    content: "";
+    display: block;
+    height: 20vh;
+
+}
+
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(255 255 255 / 20%); 
+    gap: 4px;
+    border-color: white;
+    
+}
+
+
+.logo-image {
+    width: 60px;
+    mix-blend-mode: multiply; /*this is to fade the background of the image itself*/
+    
+}
+
+.logo-name {
+    font: 4rem "norse";
+    color:brown;
+    
+}
+
+.logo-image,
+.logo-name {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.credit,
+.footer {
+    margin-top: auto; /*push the footer down and stick it there*/
+    font-size: 10px;
+    padding-bottom: 8px;
+    
+}
+
+a {
+    text-decoration: none;
+    color:darkslategrey;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    background-color:whitesmoke;
+    padding-left: 32px;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+
+.form-container::before {
+    content: "";
+    display: block;
+    height: 10vh;
+}
+
+
+.some-text {
+    padding-right: 52px;
+    color: darkslategrey;
+    
+}
+
+span.odin {
+    font: 18px "norse";
+    color: brown;
+}
+
+
+span.norwegian-word {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+span {
+    font-style: italic;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    gap: 20px;
+    
+
+}
+
+
+fieldset {
+    border: none;
+    background-color: white;
+    width: auto;
+    margin-left: -32px; /*so it runs the whole width of form*/
+    padding-left: 32px;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1); /*shadow only at the bottom border*/
+    color: darkslategrey;
+    
+}
+
+legend {
+    padding-top: 10px;
+    padding-bottom: 16px;
+    float: left; /*so it doesn't sit right on the top border*/
+    font-weight: bold;
+
+}
+
+
+
+.signup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+   
+
+}
+
+
+.signup {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+}
+
+
+.signup-details {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    
+}
+
+
+label {
+    font-size: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding-bottom: 2px;
+
+}
+
+label[for="first-name"]::after,
+label[for="last-name"]::after,
+label[for="signup-mail"]::after,
+label[for="pw"]::after,
+label[for="confirm-pw"]::after {   
+    content: "Required";
+    padding: 2px;
+    background-color: darkslategrey;
+    color: white;
+    
+}
+
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    color: darkslategrey;
+    width: 170px;
+    height: 18px;
+    box-sizing: border-box;
+    font-size: .7em;
+    
+}
+
+span.pw-required {
+    font-size: .5em;
+    width: 100%;
+}
+
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+
+.submit-button {
+    display: flex;
+    padding-bottom: 20px;
+    width: 100%;
+    flex-shrink: 0;
+    
+}
+
+
+button {
+    padding: 2px 30px;
+    width: 28%;
+    height: 34px;
+    color: snow;
+    background-color: brown;
+    border: 1px solid brown;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: .7em;
+    white-space: nowrap;
+    width: max-content;
+
+}
+
+
+.login-text {
+    display: flex;
+    font-size: .7em;
+    width: 100%;
+
+}
+
+.footer {
+    color: brown;
+}
