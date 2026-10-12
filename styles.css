@@ -67,6 +67,7 @@ body {
     background-color: rgb(255 255 255 / 20%); 
     gap: 4px;
     border-color: white;
+    flex-wrap: wrap;
     
 }
 
@@ -176,13 +177,12 @@ legend {
 }
 
 
-
 .signup-fields {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
-   
+    
 
 }
 
@@ -210,6 +210,8 @@ label {
     align-items: baseline;
     width: 100%;
     padding-bottom: 2px;
+    box-sizing: border-box;
+    
 
 }
 
@@ -227,6 +229,7 @@ label[for="confirm-pw"]::after {
 
 
 input {
+    display: flex;
     border: 1px solid #E5E7EB;
     border-radius: 4px;
     color: darkslategrey;
@@ -234,6 +237,7 @@ input {
     height: 18px;
     box-sizing: border-box;
     font-size: .7em;
+    
     
 }
 
