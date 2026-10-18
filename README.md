@@ -2,7 +2,7 @@
 
 Project: Sign-up Form from The Odin Project.
 
-Using HTML and CSS.
+Using HTML and CSS (flexbox for layout).
 
 To see this in action, go to https://webdevelopmentportfolio.github.io/Project-Sign-Up-Form/.
 
