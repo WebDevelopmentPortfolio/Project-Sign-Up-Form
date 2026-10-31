@@ -1,8 +1,8 @@
 
 
-Project: Sign-up Form from The Odin Project.
+Project: Sign-up Form from <a href="https://www.theodinproject.com/">The Odin Project </a> Full Stack JavaScript Course on Intermediate HTML and CSS, Form Basics.
 
-Using HTML and CSS (flexbox for layout).
+Using HTML and CSS (Flexbox for layout).
 
 To see this in action, go to https://webdevelopmentportfolio.github.io/Project-Sign-Up-Form/.
 
